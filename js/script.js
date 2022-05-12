@@ -7,13 +7,9 @@
     let secondDegree = document.querySelector('.secondDegree');
     let tempHigh = document.querySelector('.high');
     let tempLow = document.querySelector('.low');
-    // let yes = document.getElementById("yes");
-    // let newLoc = document.getElementById("newLocation").value
           
 
 //after page loads we will get location
-//get longitude and latitude from user location.  This is something that is built in to JS.
-//create an arrow function for longitude and latitude
 
 window.addEventListener('load', () => {
     let long;
