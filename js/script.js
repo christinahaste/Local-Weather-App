@@ -24,7 +24,7 @@ window.addEventListener('load', () => {
             long = position.coords.longitude;     //RIO DE JAN -43.182365; 
             lat =  position.coords.latitude; //RIO DE JAN -22.970722; 
         
-           //const proxy = 'https://cors-anywhere.herokuapp.com/'; //${proxy}  //NOT NECESSARY WITH OPEN WEATHER MAP
+           
             const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=25bc3352d84baf186ad0f0dade079b8f`;
             //to get the information we will use fetch() to get info from the URL above
             fetch(api)
@@ -106,13 +106,7 @@ window.addEventListener('load', () => {
               
             });
 
-         
-    
-    
-            //set icon - invoke the function we have written below (setIcons())
-            // THIS DOES NOT WORK setIcons(icon, document.querySelector('.icon'));
-            //make a list of timezone and locations to print
-            //above is shorthand for const {temperature} = data.currently (shorthand from es2015)
+       
             if (temp >= 296){
                 document.body.style.backgroundImage = "url('images/gautier-salles-uffQnKuJ-hc-unsplash.jpg')";
             } else if (temp <= 270) {
@@ -126,28 +120,3 @@ window.addEventListener('load', () => {
      });
      } 
     
-    //  function weatherDescription () {
-    
-    //  }
-     //HAVE QUOTES ABOUT WEATHER DEPENDING ON THE TEMP 'its raining its pouring' 'rain rain go away' 'the rain in spain..'
-    
-     //THIS DOES NOT WORK:
-    //  function setIcons(icon, iconID) {
-    //         const skycons = new Skycons({color: "white"});
-    //         const currentIcon = icon.replace(/-/g, "_").toUpperCase(); //is going to look for every line and replace it with underscore
-    //         skycons.play();
-    //         return skycons.set(iconID, Skycons[currentIcon]);
-    //     }
-    
-    
-    
-    //else {
-    //     h1.textContent = 'hey this is not working' //if browser doesn't give access to location
-    // }
-    
-    });
-    //openweathermap.org/api_keys weather info (free) Weather API
-    
-//after page loads we will get location
-//get longitude and latitude from user location.  This is something that is built in to JS.
-//create an arrow function for longitude and latitude
