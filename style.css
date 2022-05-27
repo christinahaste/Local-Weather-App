@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-image: url("images/nikolas-noonan-fQM8cbGY6iQ-unsplash\ \(5\).jpg");
+  background-repeat: no-repeat;
+  background-size: 1900px 800px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("images/nikolas-noonan-fQM8cbGY6iQ-unsplash\ \(5\).jpg");
+  background-repeat: no-repeat;
+  background-size: 1900px 800px;
+  font-family: sans-serif;
+  color: white;
+}
+
+.temperature-description,
+.location {
+  font-family: "Montserrat", "Open Sans";
+  font-size: 30px;
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.location .icon {
+  width: 80px;
+}
+
+.temperature {
+  flex-direction: column;
+}
+
+.degree-section {
+  font-family: "Open Sans";
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.degree-section span {
+  font-family: "Open Sans";
+  margin: 10px;
+  font-size: 70px;
+}
+
+.degree-section .second-degree {
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.degree-section h2 {
+  font-family: "Montserrat";
+  font-size: 100px;
+}
+
+.temperature-description {
+  font-family: "Montserrat", "Inspiration";
+  font-size: 40px;
+}
+
+.searchCity {
+  font-family: "Montserrat", "Open Sans";
+}
+.searchCity input {
+  outline: none;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 8px;
+}
+
+.searchCity button {
+  color: white;
+  background-color: grey;
+  border: none;
+  padding: 1px 5px;
+  margin: 4px;
+  border: 2px solid rgb(48, 47, 47);
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  font-family: "Open Sans", "Montserrat";
+  font-size: 15px;
+}
+.searchCity button:hover {
+  color: rgb(70, 68, 68);
+  background-color: white;
+}
